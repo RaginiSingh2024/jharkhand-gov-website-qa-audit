@@ -1,124 +1,158 @@
-# 🌐 360° Urban Resilience Hub
+# 🌐 Jharkhand Gov Website QA Audit & 360° Urban Resilience Hub
 
-A modern, responsive web application designed to provide citizens with quick access to emergency services, civic utilities, and essential public resources — all in one place.
+This repository contains the complete submission for the **AI-Driven Development & Testing Internship Assessment**, covering both:
 
----
-
-## 🚀 Project Overview
-
-This project is built as part of an assignment to create a **single-page responsive dashboard** for urban citizens. It focuses on usability, accessibility, and real-world functionality.
+* 🧪 **Task 1: QA Audit Report**
+* 💻 **Task 2: Web Application (360° Urban Resilience Hub)**
 
 ---
 
-## ✨ Key Features
+## 🧪 Task 1: QA Audit Report
+
+A comprehensive QA audit of the **Jharkhand Government website**, identifying:
+
+* Functional bugs
+* UI/UX issues
+* Accessibility gaps
+* Performance observations
+
+📄 **Audit Report:**
+[View PDF](./QA_Audit_Report_Ragini_Singh.pdf)
+
+✔ Includes real screenshots
+✔ Clear issue descriptions
+✔ Practical recommendations for improvement
+
+---
+
+## 💻 Task 2: 360° Urban Resilience Hub
+
+A modern, responsive **single-page web application** designed as a one-stop solution for city citizens.
+
+### 🎯 Objective
+
+To provide quick access to emergency services, civic utilities, and sustainability resources in an intuitive and user-friendly interface.
+
+---
+
+## 🚀 Features
 
 ### 🚨 SOS Emergency Panel
 
-* One-tap access to emergency services
-* Direct call functionality (Police, Fire, Ambulance, Women Helpline, Traffic Police)
-* High visibility UI for urgent situations
+* One-click access to:
+
+  * Police (100)
+  * Fire (101)
+  * Ambulance (108)
+  * Women Helpline (1091)
+  * Traffic Police (1095)
 
 ---
 
 ### 🏛 Civic Utility Center
 
-* Quick access to essential government services
-* Electricity Bill, Water/Property Tax, Police Lost & Found
-* External links to official portals
+* Electricity Bill
+* Water / Property Tax
+* Police Lost & Found
 
 ---
 
 ### ♻️ E-Waste & Battery Hub
 
-* List of verified recycling centers
-* Search & filter functionality
+* List of recycling centers
 * Contact details (Phone, Email, Address)
-* “Open in Maps” integration
+* “Open in Maps” functionality
+* 🔍 Search/filter feature
 
 ---
 
-### ❓ Safe Disposal FAQ
+### ❓ FAQ Section
 
-* Awareness about e-waste handling
-* Battery safety guidelines
-* Government-related disposal practices
+* Safe e-waste disposal guidance
+* Battery handling instructions
 
 ---
 
 ### 🩸 Blood Bank Availability
 
-* Major hospitals listed with availability status
-* “Check Availability” button for real-time access
-* Clear UI indicators (Available / Limited Stock)
+* Hospital listings
+* Availability status (Available / Limited)
+* Redirect to official portals
 
 ---
 
-### 🌗 Dark / Light Mode
+## 🎨 UI/UX Highlights
 
-* Toggle between themes
-* Improved accessibility and user experience
-
----
-
-## 📱 Responsive Design
-
-* Mobile-first approach
-* Optimized for all screen sizes
-* SOS panel prioritized on mobile devices
+* 🌙 Dark Mode / ☀️ Light Mode toggle
+* 📱 Mobile-first responsive design
+* ✨ Smooth UI and modern layout
+* 🎯 High accessibility and readability
 
 ---
 
 ## 🛠 Tech Stack
 
 * HTML5
-* CSS3 (Custom Properties, Responsive Design)
-* JavaScript (DOM Manipulation, Filtering, Interactions)
+* CSS3
+* JavaScript
 
 ---
 
-## 🎥 Demo Video
+## 📽 Demo
 
-👉 [Add your Google Drive link here]
+🎥 Screen recording included in submission (Google Drive link)
 
 ---
 
 ## 📂 Project Structure
 
 ```
-urban-resilience-hub/
-│── index.html
-│── style.css
-│── script.js
+index.html
+style.css
+script.js
+QA_Audit_Report_Ragini_Singh.pdf
+README.md
 ```
 
 ---
 
-## 🎯 Objective
+## 📌 How to Run Locally
 
-To build a **user-friendly, accessible, and functional civic dashboard** that helps citizens quickly access emergency services and essential utilities.
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/RaginiSingh2024/jharkhand-gov-website-qa-audit.git
+   ```
+
+2. Open the folder:
+
+   ```
+   cd jharkhand-gov-website-qa-audit
+   ```
+
+3. Run:
+
+   * Open `index.html` in browser
+     OR
+   * Use Live Server in VS Code
 
 ---
 
-## 📌 Highlights
-
-* Clean and modern UI design
-* Fully functional buttons and links
-* Real-world inspired data
-* Interactive components
-* Focus on usability and accessibility
-
----
-
-## 👩‍💻 Author
+## 🙋‍♀️ Author
 
 **Ragini Singh**
-GitHub: https://github.com/RaginiSingh2024
+
+* GitHub: https://github.com/RaginiSingh2024
 
 ---
 
-## 📄 License
+## ✅ Submission Summary
 
-This project is created for educational and assessment purposes.
+| Task             | Status      |
+| ---------------- | ----------- |
+| Task 1: QA Audit | ✅ Completed |
+| Task 2: Web App  | ✅ Completed |
 
 ---
 
+✨ Built with focus on usability, design, and real-world problem solving.
