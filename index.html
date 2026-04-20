@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="360° Urban Resilience Hub – Your centralized portal for emergency, civic, recycling, and health services." />
+  <title>360° Urban Resilience Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── LOADER ── -->
+  <div id="loader">
+    <div class="loader-ring"></div>
+    <p class="loader-text">Loading Urban Hub…</p>
+  </div>
+
+  <!-- ── TOAST CONTAINER ── -->
+  <div id="toast-container" aria-live="polite"></div>
+
+  <!-- ── BACK TO TOP ── -->
+  <button id="back-to-top" title="Back to Top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ── HEADER ── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-icon"><i class="fa-solid fa-city"></i></span>
+        <div>
+          <h1>360° Urban Resilience Hub</h1>
+          <p class="tagline">One portal. Every essential service.</p>
+        </div>
+      </div>
+      <div class="header-controls">
+        <div class="theme-toggle" title="Toggle dark/light mode">
+          <input type="checkbox" id="theme-switch" />
+          <label for="theme-switch">
+            <span class="toggle-track">
+              <span class="toggle-thumb"></span>
+              <i class="fa-solid fa-moon icon-dark"></i>
+              <i class="fa-solid fa-sun icon-light"></i>
+            </span>
+          </label>
+        </div>
+        <nav class="nav-links">
+          <a href="#sos">SOS</a>
+          <a href="#civic">Civic</a>
+          <a href="#ewaste">E-Waste</a>
+          <a href="#faq">FAQ</a>
+          <a href="#bloodbank">Blood</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── MAIN CONTENT ── -->
+  <main class="container">
+
+    <!-- SECTION 1: SOS Emergency Panel -->
+    <section id="sos" class="section reveal">
+      <div class="section-label">
+        <span class="pulse-dot"></span> LIVE EMERGENCY
+      </div>
+      <h2 class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> SOS Emergency Panel</h2>
+      <p class="section-sub">Tap a service to connect instantly. Stay calm, help is on the way.</p>
+      <div class="sos-grid">
+        <a href="tel:100" class="sos-btn police" onclick="showToast('📞 Calling Police (100)…', 'info')" aria-label="Call Police">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span class="sos-name">Police</span>
+          <span class="sos-num">100</span>
+        </a>
+        <a href="tel:101" class="sos-btn fire" onclick="showToast('🔥 Calling Fire Brigade (101)…', 'warning')" aria-label="Call Fire">
+          <i class="fa-solid fa-fire-extinguisher"></i>
+          <span class="sos-name">Fire</span>
+          <span class="sos-num">101</span>
+        </a>
+        <a href="tel:108" class="sos-btn ambulance" onclick="showToast('🚑 Calling Ambulance (108)…', 'success')" aria-label="Call Ambulance">
+          <i class="fa-solid fa-truck-medical"></i>
+          <span class="sos-name">Ambulance</span>
+          <span class="sos-num">108</span>
+        </a>
+        <a href="tel:1091" class="sos-btn women" onclick="showToast('👩 Connecting Women Helpline (1091)…', 'info')" aria-label="Women Helpline">
+          <i class="fa-solid fa-venus"></i>
+          <span class="sos-name">Women Helpline</span>
+          <span class="sos-num">1091</span>
+        </a>
+        <a href="tel:1095" class="sos-btn traffic" onclick="showToast('🚦 Calling Traffic Police (1095)…', 'warning')" aria-label="Traffic Police">
+          <i class="fa-solid fa-traffic-light"></i>
+          <span class="sos-name">Traffic Police</span>
+          <span class="sos-num">1095</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Civic Utility Center -->
+    <section id="civic" class="section reveal">
+      <div class="section-label"><i class="fa-solid fa-landmark"></i> CIVIC SERVICES</div>
+      <h2 class="section-title"><i class="fa-solid fa-building-columns"></i> Civic Utility Center</h2>
+      <p class="section-sub">Quick access to essential government portals.</p>
+      <div class="civic-grid">
+        <a href="https://www.bescom.co.in" target="_blank" rel="noopener" class="civic-card" onclick="showToast('🔗 Opening Electricity Portal…', 'info')">
+          <div class="civic-icon" style="background: linear-gradient(135deg,#f59e42,#f97316);">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3>Electricity Bill</h3>
+          <p>Pay & view your electricity bill online</p>
+          <span class="civic-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <a href="https://mcg.gov.in" target="_blank" rel="noopener" class="civic-card" onclick="showToast('🔗 Opening Water/Tax Portal…', 'info')">
+          <div class="civic-icon" style="background: linear-gradient(135deg,#38bdf8,#0ea5e9);">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+          <h3>Water / Property Tax</h3>
+          <p>Manage water bills & municipal property tax</p>
+          <span class="civic-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <a href="https://lnf.nationalpolice.gov.in" target="_blank" rel="noopener" class="civic-card" onclick="showToast('🔗 Opening Lost & Found Portal…', 'info')">
+          <div class="civic-icon" style="background: linear-gradient(135deg,#a78bfa,#7c3aed);">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <h3>Police Lost & Found</h3>
+          <p>Report or track lost items & persons</p>
+          <span class="civic-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 3: E-Waste & Battery Hub -->
+    <section id="ewaste" class="section reveal">
+      <div class="section-label"><i class="fa-solid fa-recycle"></i> SUSTAINABILITY</div>
+      <h2 class="section-title"><i class="fa-solid fa-leaf"></i> E-Waste & Battery Hub</h2>
+      <p class="section-sub">Find certified recycling centers near you.</p>
+
+      <div class="search-wrap">
+        <i class="fa-solid fa-search search-icon"></i>
+        <input type="text" id="ewaste-search" placeholder="Search centers by name or location…" autocomplete="off" />
+        <button id="clear-search" aria-label="Clear search"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="cards-grid" id="ewaste-cards"></div>
+
+      <!-- FAQ Accordion inside E-Waste -->
+      <div id="faq" class="faq-wrapper">
+        <h3 class="faq-heading"><i class="fa-solid fa-circle-question"></i> Safe Disposal FAQ</h3>
+        <div class="accordion" id="faq-accordion"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Blood Bank -->
+    <section id="bloodbank" class="section reveal">
+      <div class="section-label"><i class="fa-solid fa-droplet"></i> HEALTH</div>
+      <h2 class="section-title"><i class="fa-solid fa-heart-pulse"></i> Blood Bank Availability</h2>
+      <p class="section-sub">Check real-time blood stock at major hospitals.</p>
+      <div class="cards-grid" id="blood-cards"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      <i class="fa-solid fa-city"></i>
+      &copy; <span id="year"></span> 360° Urban Resilience Hub &nbsp;|&nbsp; Built for the community
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
