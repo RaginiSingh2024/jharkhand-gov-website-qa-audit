@@ -27,7 +27,11 @@ A comprehensive QA audit of the **Jharkhand Government website**, identifying:
 
 ## 💻 Task 2: 360° Urban Resilience Hub
 
+
 A modern, responsive **single-page web application** designed as a one-stop solution for city citizens.
+
+## View Demo
+https://jharkhand-gov-website-qa-audit.netlify.app/
 
 ### 🎯 Objective
 
@@ -137,6 +141,8 @@ README.md
    * Use Live Server in VS Code
 
 ---
+
+
 
 ## 🙋‍♀️ Author
 
